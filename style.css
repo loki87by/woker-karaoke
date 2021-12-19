@@ -1,0 +1,93 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  background-color: black;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s linear;
+}
+
+.img-container_big {
+  height: 100vh;
+}
+
+.karaoke {
+  width: 100%;
+  height: 25vh;
+}
+
+button {
+  position: absolute;
+  z-index: 2;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  filter: invert(35%) sepia(55%) saturate(900%) hue-rotate(348deg)
+    brightness(100%) contrast(99%);
+  -webkit-transition: -webkit-transform .7s linear;
+  transition: -webkit-transform .7s linear;
+  -o-transition: transform .7s linear;
+  transition: transform .7s linear;
+  transition: transform .7s linear, -webkit-transform .7s linear;
+}
+
+.play {
+  background-color: transparent;
+}
+
+button:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+button:active,
+button:visited,
+button:focus-within,
+button:focus-visible,
+button:target {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.image {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: cover;
+  transition: all .5s linear;
+}
+
+.image_big {
+  max-height: 100vh;
+}
+
+pre {
+  font-size: 5vmax;
+  line-height: 1;
+  color: #fff;
+}
+
+.text-container {
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.painted-text {
+  color: #ef7f1b;
+}
+
+.hidden {
+  display: none;
+}
