@@ -148,7 +148,7 @@ function gallerySwitcher() {
 function startSong() {
   launchFullScreen()
   playAudio();
-  karaoke(25000);
+  karaoke(26000);
   gallerySwitcher()
   setTimeout(() => {
     const oldDiv = document.querySelector(".text-container");
