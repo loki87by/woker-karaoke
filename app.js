@@ -133,7 +133,7 @@ function gallerySwitcher() {
   }, 1000)
   for(let i=0; i < PIC_ARRAY.length; i++){
     const img = createElement('img', {class: 'image', alt: 'img', src: PIC_ARRAY[i]})
-    if(i < 4) {
+    if((i < 4) || i > 23) {
       img.classList.add('image_big')
     }
     setTimeout(() => {
@@ -153,8 +153,10 @@ function startSong() {
     const oldDiv = document.querySelector(".text-container");
     if(oldDiv) {
     oldDiv.remove();
+    body.classList.add('hidden')
+    gallery.classList.add('img-container_big')
     }
-  }, 3050 * 16 + 3300 * 16 + 33000);
+  }, 3050 * 16 + 3300 * 17 + 33000);
 }
 
 button.addEventListener("click", startSong);
