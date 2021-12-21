@@ -6,7 +6,6 @@ const button = document.getElementById("play");
 const SONG = "./song.mp3";
 const audio = new Audio();
 audio.src = SONG;
-audio.onloadeddata = () => {button.classList.remove('hidden')}
 
 const createElement = (tagName, params, container, text) => {
   const element = document.createElement(tagName);
@@ -155,7 +154,7 @@ function startSong() {
     if(oldDiv) {
     oldDiv.remove();
     }
-  }, 3050 * 16 + 3300 * 16 + 6900);
+  }, 3050 * 16 + 3300 * 16 + 33000);
 }
 
 button.addEventListener("click", startSong);
